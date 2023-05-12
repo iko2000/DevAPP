@@ -12,7 +12,7 @@ function Stats(props: any) {
      <p>{props.followers}</p>
      </div>
     <div className="stat"> 
-    <p>following</p>
+    <p>Following</p>
      <p>{props.following}</p>
     </div>
 

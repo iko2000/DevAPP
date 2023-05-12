@@ -106,7 +106,6 @@ address {
   color: grey;
 }
 
-
 @media only screen and (max-width: 700px) {
   .linker {
     font-size: 8px;
@@ -120,5 +119,8 @@ address {
   }
   .links {
     height: 20%;
+  }
+  .stat p {
+    font-size: 12px;
   }
 }
