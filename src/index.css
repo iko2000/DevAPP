@@ -1,13 +1,214 @@
+@font-face {
+  font-family: mono;
+  src: url("./assets/font/SpaceMono-Bold.ttf");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.App {
+  width: 100%;
+  height: 45rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: mono;
+}
+
+.box {
+  width: 60%;
+  height: 70%;
+}
+
+.floor1 {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.darken {
+  font-size: 20px;
+  color: white;
+  margin-right: 5px;
+}
+.lighten {
+  font-size: 20px;
+  color: black;
+  margin-right: 5px;
+}
+p {
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+.floor2 {
+  width: 100%;
+  height: 3%;
+}
+
+.floor3 {
+  width: 100%;
+  height: 15%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.input {
+  width: 80%;
+  height: 50%;
+  display: flex;
+}
+.input div {
+  width: 80%;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  margin-left: 50px;
+}
+
+input {
+  width: 90%;
+  border: none;
+  height: 30px;
+}
+
+.input img {
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+}
+
+.floor3 button {
+  width: 90px;
+  height: 50px;
+  margin-right: 5px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.floor4 {
+  width: 100%;
+  height: 5%;
+}
+
+.floor5 {
+  width: 100%;
+  height: 65%;
+  display: flex;
+  border-radius: 10px;
+}
+
+.picdiv {
+  width: 30%;
+  height: 100%;
+  display: flex;
+
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.profile {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.picdiv img {
+  width: 65%;
+  height: 50%;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.light {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.dark {
+  width: 70px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  background-color: #00022e;
+  color: white;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .box {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .App {
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+  .box {
+    width: 90%;
+  }
+  .floor5 {
+    display: block;
+    height: 90%;
+  }
+  .picdiv {
+    width: 100%;
+    height: 30%;
+  }
+
+  .picdiv img {
+    width: 100px;
+    height: 100px;
+  }
+  .profile {
+    width: 100%;
+  }
+  .linker {
+    font-size: 10px;
+  }
+
+  .input div {
+    margin-left: 15px;
+  }
+  address {
+    font-size: 15px;
+  }
+  .insider {
+    justify-content: center;
+  }
+  input::placeholder {
+    font-size: 10px;
+  }
 }
